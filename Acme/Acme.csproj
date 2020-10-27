@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Acme.Apllication\Acme.Apllication.csproj" />
+    <ProjectReference Include="..\Acme.Infrastructure.Data\Acme.Infrastructure.Data.csproj" />
+    <ProjectReference Include="..\Acme.Infrastructure.IoC\Acme.Infrastructure.IoC.csproj" />
+    <ProjectReference Include="..\Acme.Apllication\Acme.Apllication.csproj" />
+    <ProjectReference Include="..\Acme.Apllication\Acme.Apllication.csproj" />
+    <ProjectReference Include="..\Acme.Apllication\Acme.Apllication.csproj" />
+    <ProjectReference Include="..\Acme.Apllication\Acme.Apllication.csproj" />
+    <ProjectReference Include="..\Acme.Apllication\Acme.Apllication.csproj" />
+    <ProjectReference Include="..\Acme.Apllication\Acme.Apllication.csproj" />
+    <ProjectReference Include="..\Acme.Apllication\Acme.Apllication.csproj" />
+    <ProjectReference Include="..\Acme.Apllication\Acme.Apllication.csproj" />
+  </ItemGroup>
+
+</Project>

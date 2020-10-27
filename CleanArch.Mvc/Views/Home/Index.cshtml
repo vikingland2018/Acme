@@ -1,0 +1,36 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+@model Acme.Apllication.ViewModels.AccountViewModel
+
+<div class="container">
+    @foreach (var course in Model.Courses)
+    {
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = " mt-sm-5" }))
+        {
+            <div style="border:1px solid grey">
+                <div class="col">Name: @course.CustomerNumber</div>
+                <div class="col">Balance: @course.Balance</div>
+                <div class="col">Overdraft: @course.Overdraft</div>
+                <div class="col">Account type: @course.AccountType</div>
+                <div class="col">
+                    <input type="hidden" value="@course.Id" name="Id" />
+                </div>
+                <div class="col">
+                    <input type="number" name="Deposit" placeholder="Deposit..." />
+                </div>
+                <div class="col">
+                    <input type="number" name="Withdraw" placeholder="Withdraw..." />
+                </div>
+                <div class="col">
+                    <input type="submit" value="Submit" />
+                </div>
+                <div>
+                    @course.Message
+                </div>
+            </div>
+
+        }
+    }
+</div>

@@ -5,6 +5,11 @@
 @model Acme.Apllication.ViewModels.AccountViewModel
 
 <div class="container">
+    <p>
+        Just a quick interface for testing basic deposit and withdraw functionality.
+    </p>
+
+
     @foreach (var course in Model.Courses)
     {
         @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { @class = "r" }))

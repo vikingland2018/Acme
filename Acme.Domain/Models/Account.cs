@@ -1,11 +1,12 @@
-﻿using System;
+﻿using Acme.Domain.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Text;
 
 namespace Acme.Domain.Models
 {
-    public class Account
+    public class Account: IAccountServices
     {
         public int Id { get; set; }
         public string CustomerNumber { get; set; }
